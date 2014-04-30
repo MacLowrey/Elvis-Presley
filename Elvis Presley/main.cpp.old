@@ -1,0 +1,121 @@
+//
+//  main.cpp
+//  Elvis Presley
+//
+//  Created by Jon Lowrey on 4/23/14.
+//  Copyright (c) 2014 Jon Lowrey. All rights reserved.
+//
+
+/*#include <iostream>
+
+#include <fstream>
+using namespace std;
+int minToSec(string time){
+    int secs;
+    int mins;
+    mins = ((time.at(0)*10)+time.at(1));
+    secs = ((time.at(3)*10)+time.at(4));
+    secs +=(mins*60);
+    
+    
+    
+    return secs;
+}
+
+int main(){
+int i=0;
+    
+
+ ifstream myFile;
+    myFile.open("test.dat");
+    if(myFile.is_open()){
+        cout<<"File Open!"<<endl;
+    }
+    else
+        cout<<"File Not Opened!";
+    struct obj {
+        string Name;
+        int age;
+        string type;
+        
+    
+    }foo[4];
+    for (i=0;i<4;i++){
+        myFile>>foo[i].Name;
+        myFile>>foo[i].age;
+        myFile>>foo[i].type;
+    }
+    for (int i =0;i<4;i++){
+        cout<<foo[i].Name<<endl;
+        cout<<foo[i].age<<endl;
+        cout<<foo[i].type<<endl;
+    }
+    
+}*/
+
+//#include <iostream>
+//using namespace std;
+
+/* int minToSec(string time){
+ int secs;
+ int mins;
+ mins = ((time.at(0)*10)+time.at(1));
+ cout<<"the minutes are. "<<mins;
+ secs = ((time.at(3)*10)+time.at(4));
+ cout<<"the seconds are. "<<secs;
+ secs +=(mins*60);
+ cout<<"combined are. "<<secs;
+ 
+ 
+ return secs;
+ }*/
+/*int main(){
+    //int seconds;
+    string time;
+    cin>>time;
+    int one = time.at(0);
+    //seconds = minToSec(time);
+    cout<<one<<endl;
+    
+}
+*/
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main(){
+    ifstream myFile;
+    myFile.open("data.dat");
+    if(myFile.is_open()){
+        cout<<"File Open!"<<endl;
+    }
+    else
+        cout<<"File Not Opened!";
+    struct obj {
+        string Title;
+        String Date;
+        int Track;
+        // string ; start here, you need a way to handle time.
+        
+        
+    }foo[4];
+    for (int i =0;i<4;i++){
+        myFile>>foo[i].Title;
+        myFile>>foo[i].;
+        myFile>>foo[i].type;
+    }
+    for (int i =0;i<4;i++){
+        cout<<foo[i].Name<<endl;
+        cout<<foo[i].age<<endl;
+        cout<<foo[i].type<<endl;
+    }
+    
+    
+}
+
